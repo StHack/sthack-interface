@@ -1,0 +1,15 @@
+{
+	"private_key"    : "server.key",
+	"certificate"    : "server.crt",
+	"port"           : "4443",
+	"session_secret" : "change me",
+	"admin_name"     : "admin",
+	"mongo"          :	
+		{
+			"ip"    : "127.0.0.1",
+			"port"  : 27017,
+			"db"     : "sthack",
+			"login"    : "login",
+			"password" : "password"
+		}
+}
