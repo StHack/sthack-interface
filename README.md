@@ -53,4 +53,4 @@ Run
 ```
 $ node index.js
 ```
-Enjoy https://<hostname>:4443 !
+Enjoy https://hostname:4443 !
