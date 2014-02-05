@@ -4,7 +4,7 @@ sthack-interface
 Introduction
 --------------------
 The NodeJS interface for St'Hack CTF game.
-More information ont the  event : https://www.sthack.fr/
+More information on the  event : https://www.sthack.fr/
 
 Installation
 --------------------
