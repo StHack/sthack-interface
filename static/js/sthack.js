@@ -75,7 +75,7 @@ loadImages(sources, function() {
 function rand_rotation(){
 setTimeout(function() {
 canvas_id=Math.floor((Math.random()*mes_canvas.length));
-if(my_param[canvas_id].nuc.be_r==0){
+if(my_param[canvas_id].nuc.be_r==0 && $("#challenges").is(":hover")){
     rotateNuclear(canvas_id,Math.floor((Math.random()*3)+1))
     animNuclear(canvas_id);
 }
