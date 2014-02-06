@@ -9,16 +9,7 @@
   <link href="/static/icone.ico" type="image/x-icon" rel="shortcut icon">
   <script src="/static/js/jquery.js"></script>
   <script src="/static/js/sthack.js"></script>
-  <script src="/static/js/script_log.js"></script>
-  <script src="/static/js/jquery.dd.js"></script>
   <script src="/socket.io/socket.io.js"></script>
-
-
-  <script language="javascript">
-  $(document).ready(function() {
-    $("body select").msDropDown();
-  });
-  </script>
 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -33,9 +24,9 @@
           <div id="log_in">
               <img id="logo" src="/static/img/logo_login.png" alt="logo"><br />
               <form method="POST" action="">
-                  <select name="login" id="webmenu" onchange="change(this)">
+                  <select name="login" id="webmenu" style="text-align:center;">
                     <% teams_list.forEach(function(team){ %>
-                    <option value="<%= team.login %>" data-image="/static/img/team_logos/<%= team.login %>.png"><%= team.login %></option>
+                    <option value="<%= team.login %>"><%= team.login %></option>
                     <% }) %>
                 </select>
               <input type="password" name="password" />

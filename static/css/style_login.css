@@ -1,12 +1,13 @@
 body{
 	width: 100%;
-	background: url(/static/img/bg.jpg); 
+	background: url(/static/img/bg.jpg);
 }
 
 #log_in{
 	width: 224px;
 	height: 267px;
 	margin: 12% auto;
+      text-align:center;
 	background: #1e5799; /* Old browsers */
 	background: -moz-linear-gradient(top,  #1e5799 0%, #ffffff 0%, #e3e3e3 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#ffffff), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
@@ -17,33 +18,31 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
 }
 #logo{
-	margin-left: 25%;
-	margin-top: 5%;
-	width: 50%;
+	margin-top: 20%;
+      margin-bottom: 10%;
+	width: 90%;
 }
 
-select{  
-    padding: 9px;  
-    border: solid 1px #c5c5c5;  
-    outline: 0;  
+select{
+    padding: 9px;
+    border: solid 1px #c5c5c5;
+    outline: 0;
     border: 0;
-    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
-    width: 65%;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 80%;
     height: 13%;
     margin-top: 5%;
-    float: left;
-    background: #FFFFFF;  
+    background: #FFFFFF;
 }
-input{  
-    padding: 9px;  
-    border: solid 1px #c5c5c5;  
-    outline: 0;  
-    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+input{
+    padding: 9px;
+    border: solid 1px #c5c5c5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
     width: 72%;
     height: 3%;
-    margin-left: 10.5%; 
-    margin-top: 3%; 
-    background: #FFFFFF;  
+    margin-top: 3%;
+    background: #FFFFFF;
     box-shadow: 0px 0px 7px #c5c5c5;
 }
 #show{
@@ -67,7 +66,6 @@ input{
 	background-color: black;
 	color: #c5c5c5;
 	font-size: 0.9em;
-	margin-left: 29%;
 }
 #select1 select {
    background: transparent;
