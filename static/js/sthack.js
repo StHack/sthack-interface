@@ -492,6 +492,7 @@ $("#challenges").delegate('.btn','mouseleave',function(){
 
       $("#challenges").delegate('.btn','click',function(){
         var chall_name=$(this).html();
+	$("#input_conteneur_epreuve").val('');
         if(my_param[$(this).attr('id')].nuc.be_g==0){
         greatNuclear($(this).attr('id'),2,function(){
           sock.emit('give_me_task',{'name': chall_name,change:0});
