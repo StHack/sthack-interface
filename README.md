@@ -48,6 +48,12 @@ To add some task you need "{'name','description','flag','type'}". Again, flag is
 > db.tasks.insert({'name': 'First task', 'description': 'Description with <b>html</b> support.', 'flag': '4d54517a024d0cefa786029a81203fab4f94a86054417fd1b10e77f0be3cf2ca', 'type': 'Stegano'})
 ```
 
+To reset scoreboard :
+
+```
+db.tasks.update({'solved':{'$exists':true}},{'$unset':{'solved':''}},{upsert:false},{multi:true});
+```
+
 Run
 --------------------
 ```
