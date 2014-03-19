@@ -373,7 +373,7 @@ socket.on('connection', function(client) {
                   already = 1;
                   break;
                 }
-                if(tasks[i].solved[j].timestamp + 1000 * 60 * 10 > (new Date()).getTime()) {
+                if(db_tasks[i].solved[j].timestamp + 1000 * 60 * 10 > (new Date()).getTime()) {
                   closed = 1;
                   break;
                 }
