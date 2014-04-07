@@ -14,6 +14,7 @@ var express = require('express');
 var ejs = require('ejs');
 var socket_io = require('socket.io');
 var mongodb = require('mongodb');
+var _ = require('lodash');
 
 //Init
 var Server = mongodb.Server;
@@ -307,6 +308,7 @@ socket.on('connection', function(client) {
   });
 
   client.on('give_me_task', function(data) {
+    data.name=_.unescape(data.name);
     for(i = 0 ; i < db_tasks.length ; i++) {
       if(db_tasks[i].name == data.name) {
         var is_solved = solvedtask(db_tasks[i], client.handshake.team_name);
@@ -357,6 +359,7 @@ socket.on('connection', function(client) {
   });
 
   client.on('here_is_my_flag', function(data) {
+    data.task = _.unescape(data.task);
     if(time_out == 0) {
       for(i = 0 ; i < db_tasks.length ; i++) {
         if(db_tasks[i].name == data.task) {
